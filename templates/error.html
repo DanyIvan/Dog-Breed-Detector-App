@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block title %}Error{% endblock %}   
+
+{% block error %} 
+    <div class="container">
+        <hr />
+        <p class="text-center">{{error}}</p>
+        <hr />
+
+        <div class="text-center">
+            <img src="/static/error_dog.gif" width="50%" height="40%" align="middle" class="rounded mx-auto d-block" >
+        </div>
+
+        <hr />
+
+        <a href="/">
+            <button class="btn btn-lg btn-success">Try Again!</button>
+        </a>
+
+    </div>
+{% endblock %}

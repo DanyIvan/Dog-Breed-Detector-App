@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block title %}Results{% endblock %}
+
+{% block result %}
+	<div class="text-center">
+	        <center>
+	        <div id="loading"></div>
+	        </center>
+	        <div id="content">
+	            <h2 class="text-center">{{message}}</h2>
+	            <div class="text-center">
+	                <img src="{{ url_for('upload', filename=files) }}" width="60%" height="60%" align="middle" class="rounded mx-auto d-block"> 
+	            </div>
+	        </div>
+	        <hr />
+        	<a href="/">
+            	<button class="btn btn-lg btn-success">Try Again!</button>
+            </a>
+       
+	</div>
+{% endblock %}

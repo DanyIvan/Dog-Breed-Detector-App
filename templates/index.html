@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block title %}Content{% endblock %}   
+
+{% block result %} 
+    <div class="container">
+        <h1 class="text-center">Classify your dog photos!</h1>
+        <p class="text-center">Identify your dog breed or see what dog breed you resemble</p>
+        <hr />
+
+        <div class="text-center">
+            <img src="/static/Belgian-Malinois-Dog-Breed-Adult.png" width="50%" height="40%" align="middle" class="rounded mx-auto d-block" >
+        </div>
+
+        <hr />
+
+        <p class="text-center">Select an image!</p>        
+        <div class="row">
+            <div class="col-lg-12 form-group-lg">
+                <form method="POST" action="" enctype="multipart/form-data">
+                <div class="col-lg-offset-5">
+                  <p><input type="file"  name="file" required></p>
+                  <p><input type="submit" class="btn btn-lg btn-success" value="Submit" onclick="loading();"></p>
+                </div>
+                </form>
+            </div>
+        </div>
+
+        <hr />
+    </div>
+{% endblock %}
