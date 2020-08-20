@@ -29,10 +29,12 @@ def validate_image(stream):
 
 @app.route('/')
 def index():
+    '''Index route for app'''
     return render_template('index.html')
 
 @app.route('/result')
 def result():
+    '''Result route for app'''
     files = os.listdir(app.config['UPLOAD_PATH'])
     if files == []:
         return render_template('error.html', error='Error. You must sumbit a file first!')
